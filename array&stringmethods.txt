@@ -1,0 +1,124 @@
+Question 2
+
+Methods of Array:
+
+1.) entries() Method
+The entries() method returns an Array Iterator object with key/value pairs.
+Example:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var f = fruits.entries();
+for (x of f) {
+  document.getElementById("demo").innerHTML += x;
+}
+
+2.)every() Method
+The every() method checks if all elements in an array pass a test (provided as a function).
+Example:
+var ages = [32, 33, 16, 40];
+function checkAdult(age) {
+  return age >= 18;
+}
+function myFunction() {
+  document.getElementById("demo").innerHTML = ages.every(checkAdult);
+}
+
+3.) fill() Method
+The fill() method fills the specified elements in an array with a static value.
+Example:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.fill("Kiwi");
+
+4.)filter() Method
+The filter() method creates an array filled with all array elements that pass a test (provided as a function).
+Example:
+var ages = [32, 33, 16, 40];
+function checkAdult(age) {
+  return age >= 18;
+}
+function myFunction() {
+document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+}
+
+5.)findIndex() Method
+The findIndex() method returns the index of the first element in an array that pass a test (provided as a function).
+Example:
+var ages = [3, 10, 18, 20];
+function checkAdult(age) {
+  return age >= 18;
+}
+function myFunction() {
+document.getElementById("demo").innerHTML = ages.findIndex(checkAdult);
+}
+
+6.)forEach() Method
+Example:
+var fruits = ["apple", "orange", "cherry"];
+fruits.forEach(myFunction);
+function myFunction(item, index) {
+document.getElementById("demo").innerHTML += index + ":" + item + "<br>";
+}
+
+7.)join() Method
+The join() method returns the array as a string.
+Example:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var energy = fruits.join();
+
+8.)map() Method
+Example:
+var numbers = [4, 9, 16, 25];
+var x = numbers.map(Math.sqrt)
+document.getElementById("demo").innerHTML = x;
+
+9.)push() Method
+The push() method adds new items to the end of an array, and returns the new length.
+Example:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");
+
+Methods of String:
+
+1.)String Length
+The length property returns the length of a string:
+Example:
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+
+2.)Searching for a String in a String
+The search() method searches a string for a specified value and returns the position of the match:
+Example:
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+
+3.)The slice() Method
+slice() extracts a part of a string and returns the extracted part in a new string.
+The method takes 2 parameters: the start position, and the end position (end not included).
+Example:
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7, 13);
+
+4.)The substring() Method
+substring() is similar to slice().
+The difference is that substring() cannot accept negative indexes.
+Example:
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(7, 13);
+
+5.)String.trim()
+The trim() method removes whitespace from both sides of a string:
+Example:
+var str = "  Hello World!  ";
+alert(str.trim());
+
+6.)The charAt() Method
+The charAt() method returns the character at a specified index (position) in a string:
+Example:
+var str = "HELLO WORLD";
+str.charAt(0);      
+
+7.)The charCodeAt() Method
+The charCodeAt() method returns the unicode of the character at a specified index in a string:
+Example:
+var str = "HELLO WORLD";
+
+str.charCodeAt(0);    
